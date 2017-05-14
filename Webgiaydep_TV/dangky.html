@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Giày dép thời trang</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!-- -->
+	<div class="top">
+		<li><a href="dangky.html">Đăng ký</a></li>
+		<li><a href="#">Đăng nhập</a></li>
+		<li><input onfocus="javascript:if(this.value == 'Password') this.value=''" id="password" value="Password" type="text" size="15"></li>
+		<li><input onfocus="javascript:if(this.value == 'Tên đăng nhập') this.value=''" id="user" value="Tên đăng nhập" type="text" size="15"></li>
+	</div>
+	<!-- -->
+	<div class="top2" id="search-form">
+		<div id="search-button">
+			<input onclick="javascript:panelSearchProduct();return false;" type="image" src="image/searchicon.png" width="23" height="23">
+		</div>
+		<div id="search-input">
+			<input onfocus="javascript:if(this.value == 'Tên sản phẩm...') this.value=''" id="fprodkeyword" value="Tên sản phẩm..." type="text" size="25">
+		</div>
+	</div>
+	<!-- -->
+	<div class="top3">
+		<div id="weblogo">
+			<a href="index.html"><img src="image/logo.png"></a>
+		</div>
+	</div>
+	<!-- -->
+	<div id="mainmenu">
+		<ul>
+			<li style="border-left: none;"><a href="index.html">TRANG CHỦ</a></li>
+			<li><a href="#">GIÀY NAM</a>
+            	<ul class="ob-menu">
+            		<li style="border-left: none;"><a href="#">GIÀY NAM 1</a></li>
+            		<li style="border-left: none;"><a href="#">GIÀY NAM 2</a></li>
+            		<li style="border-left: none;"><a href="#">GIÀY NAM 3</a></li>
+            		<li style="border-left: none;"><a href="#">GIÀY NAM 1 TỶ</a></li>
+            	</ul>
+        	</li>
+        	<li><a href="#">GIÀY DÉP</a>
+           		<ul class="ob-menu">
+             		<li style="border-left: none;"><a href="#">GIÀY DÉP 1</a></li>
+             		<li style="border-left: none;"><a href="#">GIÀY DÉP 2</a></li>
+             		<li style="border-left: none;"><a href="#">GIÀY DÉP 3</a></li>
+             		<li style="border-left: none;"><a href="#">GIÀY DÉP 1 TỶ</a></li>
+           		</ul>
+        	</li>
+        	<li><a href="#">GIÀY BIG SIZE</a>
+           		<ul class="ob-menu">
+             		<li style="border-left: none;"><a href="#">GIÀY BIG SIZE 1</a></li>
+             		<li style="border-left: none;"><a href="#">GIÀY BIG SIZE 2</a></li>
+             		<li style="border-left: none;"><a href="#">GIÀY BIG SIZE 3</a></li>
+             		<li style="border-left: none;"><a href="#">GIÀY BIG SIZE 1 TỶ</a></li>
+           		</ul>
+        	</li>
+        	<li><a href="#">GIÀY NỮ</a>
+           		<ul class="ob-menu">
+             		<li style="border-left: none;"><a href="#">GIÀY NỮ 1</a></li>
+             		<li style="border-left: none;"><a href="#">GIÀY NỮ 2</a></li>
+             		<li style="border-left: none;"><a href="#">GIÀY NỮ 3</a></li>
+             		<li style="border-left: none;"><a href="#">GIÀY NỮ 1 TỶ</a></li>
+           		</ul>
+        	</li>
+        	<li><a href="#">DÂY LƯNG VÍ DA</a>
+           		<ul class="ob-menu">
+             		<li style="border-left: none;"><a href="#">DÂY LƯNG VÍ DA 1</a></li>
+             		<li style="border-left: none;"><a href="#">DÂY LƯNG VÍ DA 2</a></li>
+             		<li style="border-left: none;"><a href="#">DÂY LƯNG VÍ DA 3</a></li>
+             		<li style="border-left: none;"><a href="#">DÂY LƯNG VÍ DA 1 TỶ</a></li>
+           		</ul>
+        	</li>
+        	<li style="border-left: none;"><a href="#">LIÊN HỆ</a></li>
+		</ul>
+	</div>
+	<!-- -->
+	<div id="home-banner">
+		<img src="image/banner.jpg" border="0">
+	</div>
+	<br>
+	<!-- -->
+	<div id="panel">
+		<div id="panel-left">
+			<div id="panel-left-size">
+				<strong>Size:</strong>
+				<form>
+					<input checked="checked" name="size" type="radio" value="38"/>Size 38<br/>
+					<input name="size" type="radio" value="39"/>Size 39<br/>
+					<input name="size" type="radio" value="40"/>Size 40<br/>
+					<input name="size" type="radio" value="41"/>Size 41<br/>
+					<input name="size" type="radio" value="42"/>Size 42<br/>
+					<input name="size" type="radio" value="43"/>Size 43<br/>
+					<input name="size" type="radio" value="oversize"/>oversize<br/>
+				</form>
+			</div>
+			<div id="panel-left-price">
+				<strong>Phân khúc:</strong>
+				<form>
+					<input checked="checked" name="size" type="radio" value="<100"/>Dưới 100k<br/>
+					<input name="size" type="radio" value="100-300"/>100k-300k<br/>
+					<input name="size" type="radio" value="300-500"/>300k-500k<br/>
+					<input name="size" type="radio" value="500-1000"/>500k-1000k<br/>
+					<input name="size" type="radio" value=">1000"/>Trên 1000k<br/>
+				</form>
+			</div>
+			<!--
+			<div id="panel-left-type">
+				<strong>Loại:</strong>
+				<form>
+					<input checked="checked" name="size" type="radio" value="giaycongso"/>Giầy công sở<br/>
+					<input name="size" type="radio" value="giaythethao"/>Giầy thể thao<br/>
+					<input name="size" type="radio" value="more"/>...<br/>
+				</form>
+			</div>
+			-->
+			<div id="panel-left-label">
+				<strong>Thương hiệu:</strong>
+				<form>
+					<input checked="checked" name="size" type="radio" value="nike"/>NIKE<br/>
+					<input name="size" type="radio" value="adidas"/>ADIDAS<br/>
+					<input name="size" type="radio" value="asics"/>ASICS<br/>
+					<input name="size" type="radio" value="converse"/>CONVERSE<br/>
+					<input name="size" type="radio" value="puma"/>PUMA<br/>
+				</form>
+			</div>
+		</div>
+		<div id="panel-right">
+			<div class="dangky">
+				<h1>Đăng ký thành viên: </h1>
+			</div>
+			<div class="form_dangky">
+				<table width="100%" border="0"></table>
+				<tbody>
+					<tr>
+						<td align="left">Tên đăng nhâp (Email): </td><br>
+						<td align="right"><label><input type="text" name="usernam" id="id_username" size="30"></label></td>
+					</tr>
+					<br>
+					<tr>
+						<td align="left">Mật khẩu:</td><br>
+						<td align="right"><label><input type="password" name="password1" id="id_password1" size="30"></label></td>
+					</tr>
+					<br>
+					<tr>
+						<td align="left">Nhập lại mật khẩu:</td><br>
+						<td align="right"><label><input type="password" name="password2" id="id_password2" size="30"></label></td>
+					</tr>
+					<br>
+					<tr>
+						<td align="left">Họ tên</td><br>
+						<td align="right"><label><input type="text" name="hoten" id="id_hoten" size="30"></label></td>
+					</tr>
+					<br>
+					<tr>
+						<td align="left">Địa chỉ:</td><br>
+						<td align="right"><label><input type="text" name="diachi" id="id_diachi" size="30"></label></td>
+					</tr>
+					<br>
+					<tr>
+						<td align="left">Giới tính:</td><br>
+						<td align="right"><label><input checked="checked"type="radio" name="gioitinh" value="nam">Nam</label></td>
+						<td align="right"><label><input type="radio" name="gioitinh" value="nu">Nữ</label></td>
+					</tr>
+					<br>
+					<tr>
+						<td align="left">SĐT:</td><br>
+						<td align="right"><label><input type="text" name="SDT" id="id_SDT" size="30"></label></td><br>
+					</tr>
+					<br>
+					<tr>
+						<input type="submit" name="submit" id="id_submit" value="Đăng ký">
+					</tr>
+				</tbody>
+			</div>
+		</div>
+	</div>
+
+	<!--<p style="page-break-before: always"> -->
+	
+
+	<div id="footer">
+		<div id="footer-menu">
+			<div class="inner">
+				<ul>
+					<li><a href="index.html">TRANG CHỦ</a></li>
+					<li><a href="#">SẢN PHẨM & DỊCH VỤ</a></li>
+					<li><a href="#">ĐIỀU KHOẢN MUA BÁN</a></li>
+					<li><a href="#">HỎI ĐÁP</a></li>
+					<li><a href="#">GIỚI THIỆU</a></li>
+					<li><a href="#">TIN TỨC</a></li>
+					<li><a href="#">LIÊN HỆ</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="inner">
+			<div id="footer-copyright">
+				WEB GIAY DEP<br>
+				175 Tây Sơn, Hà Nội<br>
+				<br>
+				Hotline: 0123456789 (Mr.Trung), 0987654321 (Mr.Việt)<br>
+				<br>
+				Thanh toán qua ngân hàng Vietinbank: CTK Trungnp - STK: 0123 456 789 999<br>
+				Ngành nghề kinh doanh bán giầy dép thời trang<br>
+				Tên hộ kinh doanh:<br>
+				<br>
+				Copyright 2006 - 2016 - WebGiayDep.com - Giay dep Nam thoi trang.<br>
+			</div>
+			<br>
+			<div class="socials">
+				<a href="https://plus.google.com/"><img src="image/logo_g+.png"></a>
+				<a href="https://www.facebook.com/"><img src="image/logo_fb.png"></a>
+				<a href="https://twitter.com/?lang=vi"><img src="image/logo_twitter.png"></a>
+				<a href="https://www.youtube.com/"><img src="image/logo_youtube.png"></a>
+				<a href="https://www.pinterest.com/"><img src="image/logo_p.png"></a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

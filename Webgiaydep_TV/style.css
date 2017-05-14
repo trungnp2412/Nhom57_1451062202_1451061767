@@ -1,0 +1,209 @@
+a{text-decoration: none;font-size: 15px;}
+
+.top{
+	width: 100%;
+	margin: auto;
+	height: 30px;
+	background-color: #1C1C1C;
+}
+.top{
+	list-style-type: none; 
+	width: 100%;
+	height: 30px;
+	margin: 0px;
+	/*padding: 7px 30px 10px 10px;*/
+}
+.top li{
+	float: right;
+	color: #fff;
+}
+.top li a{
+	float: left;
+	font-size: 11px;
+	color: #fff;
+	margin-top: 5px;
+	padding-right: 10px;
+	padding-left: 5px;
+}
+.top3{
+	height: 60px;
+}
+
+#weblogo{
+	margin-top: 20px;
+	padding-left: 150px;
+}
+#search-form{
+	width:250px;float:right;padding:6px 0 0
+}
+#search-button{
+	float:left;padding:0
+}
+
+#mainmenu >ul>li{
+	float: left;
+	width: 160px; /*độ dài menu chính*/
+	text-align: center;
+	padding-top: 4px;
+	line-height: 25px;
+	border-left: 1px dashed #ffffff;
+	position: relative; /*cố định li mà cta hover*/
+}
+#mainmenu  ul li:hover{
+	background: #C90E2D;
+} /*đổi màu li*/
+#mainmenu >ul>li>a{
+	/*text-decoration: none;*/
+	color: #ffffff;
+}
+#mainmenu ul li>ul{
+	display: none;   /*ẩn menu con*/
+	position: absolute; z-index: 90;  /*menu con nổi trên li cố định*/
+	background:#C90E2D;
+	width: 160px; /*độ dài menu con*/
+	margin-top: 10px;
+	top: 20px;
+}
+#mainmenu li:hover .ob-menu{
+	display: block; /*hiện menu con*/
+}
+#mainmenu ul{
+	list-style-type: none; /*để mất dấu chấm tròn*/
+    padding: 0px;
+}
+#mainmenu{
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	height: 30px;
+	margin-bottom: 10px;
+	background-color: #C90E2D;
+}
+/*#menu3 ul >li >a:hover{
+	color: #669900; }/*kích vào chữ ra màu khác*/
+.ob-menu >li{
+	padding: 0px 10px 0px 30px;
+    border-bottom: 1px dotted #ffffff ;
+    text-align: center;
+    color: #ffffff;
+    background: url(image/tab.png) no-repeat 10px 14px;
+}
+.ob-menu >li >a{
+	color: #ffffff; font-size: 13px;
+}
+
+
+#home-banner img{
+	height: 100%;
+	width: 77%;
+	padding-left: 150px;
+	padding-right: 150px;
+	margin-top: 0px;
+}
+
+.h-title{
+	padding-left: 0px;
+	/*padding:0px 15px;*/
+	/*background:#9d9d08;*/
+	margin-bottom:15px;
+	color:#00BFFF;
+}
+.sanpham{
+	margin:0 3% 20px;width:26.8%;float:none;display:inline-block;
+	vertical-align:top
+}
+
+
+.hinhanh-sanpham{
+	width: 200px;
+	height: 200px;
+}
+#panel{
+	text-align: left;
+	line-height:1.5em;
+	padding-left: 150px;
+	padding-right: 156px;
+	height: 1300px;
+}
+#panel-left{
+	margin:0;
+	width:210px;
+	float:left;
+	height: 1300px;
+}
+
+#panel-left-size{
+	padding-left: 10px;
+}
+#panel-left-price{
+	padding-left: 10px;
+}
+#panel-left-label{
+	padding-left: 10px;
+}
+#panel-right{
+	margin:0;
+	float:right;
+	width:800px
+}
+.ten-sanpham{font-size: 18px;
+    font-weight: 700;
+    color: #c60a2a;
+    margin-top: 0;
+    text-transform: uppercase;	
+	text-align: center
+}
+.gia-sanpham{
+	text-align: center;
+}
+
+
+
+#footer{
+	background:#303030;
+	/*color:#fff;padding:0;*/
+	height: 300px;
+}
+#footer-menu{
+	text-align:center;
+	padding:10px 0;background:#c90e2d
+}
+#footer-menu a{
+	color:#fff;
+	text-decoration:none;
+	padding:10px;
+	font-weight: normal; 
+	text-transform: uppercase;
+}
+
+#footer-menu ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+	border-bottom:0px solid #fff
+}
+#footer-menu ul li{display: inline;
+}
+#footer-menu ul li a{
+	display: inline;
+	padding:7px 10px;font-size:14px;
+	text-align:left;
+	/*border-bottom:1px solid #fff*/
+}
+
+.inner ul li{
+	margin:0 auto;
+	width:980px;
+}
+
+#footer-copyright{
+	text-align: center;
+	padding-top: 15px;
+	color: #ffffff;
+}
+.socials{
+	text-align: center;
+}
+.dangky h1{
+	color:#c60a2a;margin-bottom:10px;
+}
